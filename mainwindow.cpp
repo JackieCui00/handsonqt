@@ -37,7 +37,7 @@ void MainWindow::on_submit() {
                             + "' AND password = '" + password + "'";
     QSqlQuery query(_db);
     if (query.exec(sql_command)) {
-        if (query.size() > 0) {
+        if (query.next()) {
             ::QMessageBox::information(this, "Login Success.", "You have successfully logged in!");
         } else {
             ::QMessageBox::information(this, "Login failed.", "Login failed, Please try again...");
