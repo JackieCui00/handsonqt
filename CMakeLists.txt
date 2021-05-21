@@ -22,3 +22,6 @@ target_link_libraries(learn_charts Qt5::Widgets Qt5::Core Qt5::Sql Qt5::Charts)
 
 add_executable(learn_view ./learn_view/main.cpp ./learn_view/window.cpp ./learn_view/learn_view.ui)
 target_link_libraries(learn_view Qt5::Widgets Qt5::Core Qt5::Sql)
+
+add_executable(image_viewer ./image_viewer/main.cpp ./image_viewer/mainwindow.cpp ./image_viewer/image_viewer.ui)
+target_link_libraries(image_viewer Qt5::Widgets Qt5::Core)
